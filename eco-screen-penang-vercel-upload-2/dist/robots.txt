@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eco-screen-penang.vercel.app/sitemap.xml

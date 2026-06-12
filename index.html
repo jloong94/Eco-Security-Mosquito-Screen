@@ -89,6 +89,20 @@
         </div>
       </section>
 
+      <section class="section showroom-trust">
+        <div class="trust-location">
+          <div>
+            <p class="eyebrow">Local Showroom</p>
+            <h2>Eco Screen Sdn Bhd</h2>
+          </div>
+          <address>
+            24 Jalan IKS Bukit Tengah<br />
+            14000 Bukit Mertajam
+          </address>
+          <a class="button ghost" href="https://www.google.com/maps/search/?api=1&query=24%20Jalan%20IKS%20Bukit%20Tengah%2014000%20Bukit%20Mertajam%20Penang" target="_blank" rel="noopener">Google Maps</a>
+        </div>
+      </section>
+
       <section class="section section-dark" id="why-choose">
         <div class="section-heading">
           <p class="eyebrow">Why Choose Eco Screen</p>
@@ -298,23 +312,23 @@
             <div class="review-grid">
               <figure>
                 <div class="stars" aria-label="5 star review">★★★★★</div>
-                <blockquote>Professional installation and the screen finishing looks clean with the house design.</blockquote>
-                <figcaption>Penang Homeowner</figcaption>
+                <blockquote>Professional installation, clean workmanship and good explanation before starting work.</blockquote>
+                <figcaption><strong>Google Review</strong><span>Penang Homeowner</span></figcaption>
               </figure>
               <figure>
                 <div class="stars" aria-label="5 star review">★★★★★</div>
-                <blockquote>Good recommendation before installation. The mesh door gives airflow and peace of mind.</blockquote>
-                <figcaption>Bukit Mertajam Customer</figcaption>
+                <blockquote>The security mesh door looks premium and still allows airflow through the house.</blockquote>
+                <figcaption><strong>Google Review</strong><span>Bukit Mertajam Customer</span></figcaption>
               </figure>
               <figure>
                 <div class="stars" aria-label="5 star review">★★★★★</div>
                 <blockquote>The team measured carefully and the final frame colour matched our renovation nicely.</blockquote>
-                <figcaption>Batu Kawan Customer</figcaption>
+                <figcaption><strong>Google Review</strong><span>Batu Kawan Customer</span></figcaption>
               </figure>
               <figure>
                 <div class="stars" aria-label="5 star review">★★★★★</div>
-                <blockquote>Easy WhatsApp communication and the installation was neat without leaving a mess.</blockquote>
-                <figcaption>Kulim Homeowner</figcaption>
+                <blockquote>Fast WhatsApp response, useful product advice and neat finishing after installation.</blockquote>
+                <figcaption><strong>Google Review</strong><span>Kulim Homeowner</span></figcaption>
               </figure>
             </div>
           </div>
@@ -322,10 +336,16 @@
       </section>
 
       <section class="section faq" id="faq">
-        <div class="section-grid">
+        <div class="section-grid faq-grid">
           <div>
             <p class="eyebrow">FAQ</p>
             <h2>Questions before installation.</h2>
+            <div class="faq-stats">
+              <div><strong>7+</strong><span>Years Experience</span></div>
+              <div><strong>1000+</strong><span>Projects Completed</span></div>
+              <div><strong>10 Years</strong><span>Warranty</span></div>
+              <div><strong>Factory</strong><span>Direct</span></div>
+            </div>
           </div>
           <div class="faq-list">
             <details open>
@@ -380,28 +400,85 @@
         <div class="contact-panel">
           <div>
             <p class="eyebrow">Contact Us</p>
-            <h2>Book your free site measurement today.</h2>
-            <p>Send photos of your door or window through WhatsApp. Our team will advise the suitable screen type, arrange measurement and guide you through production and installation.</p>
+            <h2>Send us a photo on WhatsApp for free consultation and measurement.</h2>
+            <p>Tell us your location, product type and frame colour. Our team will advise the suitable mosquito screen, security mesh door or security mesh window option for your Penang home.</p>
             <ul class="contact-list">
               <li><strong>Showroom:</strong> 24 Jalan IKS Bukit Tengah, 14000 Bukit Mertajam, Penang</li>
               <li><strong>Phone:</strong> 019-576 3499</li>
               <li><strong>Specialist:</strong> Mosquito Screen Penang, Security Mesh Door Penang, Security Mesh Window Penang, Invisible Roller Screen Penang</li>
             </ul>
           </div>
-          <div class="contact-actions">
-            <a class="button primary" href="https://wa.me/60195763499?text=Hi%20Eco%20Screen%2C%20I%20want%20to%20book%20a%20free%20site%20measurement" target="_blank" rel="noopener">Book Free Site Measurement</a>
-            <a class="button ghost" href="tel:+60195763499">Call 019-576 3499</a>
-          </div>
+          <form class="contact-form" data-quote-form>
+            <label>
+              Name
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              Area
+              <input name="area" type="text" placeholder="Bukit Mertajam" required />
+            </label>
+            <label>
+              Product
+              <select name="product" required>
+                <option value="">Select product</option>
+                <option>Security Mesh Door</option>
+                <option>Security Mesh Window</option>
+                <option>Roller Screen</option>
+                <option>Sliding Stainless Steel Net</option>
+                <option>Invisible Roller Screen</option>
+              </select>
+            </label>
+            <label>
+              Frame Colour
+              <select name="colour" required>
+                <option value="">Select colour</option>
+                <option>Black</option>
+                <option>White</option>
+                <option>Dark Grey</option>
+                <option>Bronze</option>
+                <option>Gold</option>
+                <option>Custom colour</option>
+              </select>
+            </label>
+            <label class="full">
+              Message
+              <textarea name="message" rows="3" placeholder="Door/window quantity or preferred appointment time"></textarea>
+            </label>
+            <button class="button primary full" type="submit">WhatsApp Free Measurement</button>
+            <a class="button ghost full" href="tel:+60195763499">Call 019-576 3499</a>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div>
+      <div class="footer-brand">
         <strong>Eco Screen Sdn Bhd</strong>
-        <p>Premium mosquito screen and security screen solutions in Penang.</p>
+        <p>Premium mosquito screen and security mesh solutions in Penang and Bukit Mertajam.</p>
       </div>
-      <a href="tel:+60195763499">019-576 3499</a>
+      <div class="footer-grid">
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:+60195763499">Phone: 019-576 3499</a>
+          <a href="https://wa.me/60195763499?text=Hi%20Eco%20Screen%2C%20I%20want%20to%20book%20a%20free%20site%20measurement" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div>
+          <h3>Showroom</h3>
+          <p>24 Jalan IKS Bukit Tengah<br />14000 Bukit Mertajam, Penang</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=24%20Jalan%20IKS%20Bukit%20Tengah%2014000%20Bukit%20Mertajam%20Penang" target="_blank" rel="noopener">Google Maps</a>
+        </div>
+        <div>
+          <h3>Business Hours</h3>
+          <p>Monday-Saturday<br />9am-6pm</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="#products">Products</a>
+          <a href="#projects">Project Gallery</a>
+          <a href="#showroom">Showroom</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
     </footer>
 
     <a class="whatsapp-float" href="https://wa.me/60195763499?text=Hi%20Eco%20Screen%2C%20I%20want%20to%20book%20a%20free%20site%20measurement" target="_blank" rel="noopener" aria-label="Book free site measurement on WhatsApp">

@@ -410,13 +410,42 @@ p {
 }
 
 .product-card h3,
-.product-card p {
+.product-card p,
+.selling-points {
   margin-left: 22px;
   margin-right: 22px;
 }
 
 .product-card p {
+  margin-bottom: 18px;
+}
+
+.selling-points {
+  display: grid;
+  gap: 8px;
+  margin-top: 0;
   margin-bottom: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.selling-points li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 750;
+}
+
+.selling-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 7px;
+  height: 7px;
+  background: var(--gold);
+  border-radius: 50%;
 }
 
 .gallery-grid {
@@ -468,6 +497,64 @@ p {
   display: block;
 }
 
+.before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.before-after-grid article {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(33, 25, 15, 0.94), rgba(16, 13, 9, 0.94));
+  box-shadow: var(--shadow);
+}
+
+.compare-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.compare-media figure {
+  position: relative;
+  margin: 0;
+  background: var(--black);
+}
+
+.compare-media img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.compare-media figcaption {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: 6px 9px;
+  color: #110d07;
+  background: linear-gradient(135deg, #f5dfa8, var(--gold-2));
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.before-after-grid h3,
+.before-after-grid p {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.before-after-grid h3 {
+  margin-top: 22px;
+}
+
+.before-after-grid p {
+  margin-bottom: 24px;
+}
+
 .gallery-grid figcaption span {
   margin-top: 2px;
   color: rgba(255, 245, 220, 0.82);
@@ -482,6 +569,19 @@ p {
 .address {
   color: var(--cream);
   font-size: 1.08rem;
+}
+
+.showroom-meta {
+  display: grid;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+
+.showroom-meta strong {
+  color: var(--gold);
 }
 
 .map-embed {
@@ -538,6 +638,13 @@ p {
   margin-top: 18px;
   color: var(--gold);
   font-weight: 900;
+}
+
+.stars {
+  margin-bottom: 14px;
+  color: var(--gold);
+  font-size: 1.08rem;
+  letter-spacing: 0.08em;
 }
 
 .faq-list {
@@ -731,7 +838,9 @@ p {
   .gallery-grid,
   .review-grid,
   .why-grid,
-  .process-track {
+  .process-track,
+  .before-after-grid,
+  .compare-media {
     grid-template-columns: 1fr;
   }
 

@@ -3,7 +3,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const dist = path.join(root, "dist");
-const files = ["index.html", "about.html", "faq.html", "styles.css", "script.js", "robots.txt", "sitemap.xml", "404.html"];
+const files = ["index.html", "styles.css", "script.js", "robots.txt", "sitemap.xml", "404.html"];
 const dirs = ["assets"];
 
 function copyFile(source, target) {

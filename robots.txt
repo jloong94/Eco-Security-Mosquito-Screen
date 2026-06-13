@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eco-security-mosquito-screen.vercel.app/sitemap.xml
+Sitemap: https://ecosecurityscreens.com/sitemap.xml
